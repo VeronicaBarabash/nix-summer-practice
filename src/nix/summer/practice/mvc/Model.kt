@@ -1,11 +1,11 @@
 package src.nix.summer.practice.mvc
 
-data class Response(var feedback: String)
+data class Response(val feedback: String)
 
-data class Order(var typeOfCoffee: String)
+data class Order(val typeOfCoffee: String)
 
-data class Resources(var gotWater : Int, var gotMilk : Int,
-                     var gotCoffeeBeans : Int, var gotCups : Int)
+data class Resources(val gotWater : Int, val gotMilk : Int,
+                     val gotCoffeeBeans : Int, val gotCups : Int)
 
 enum class Coffee(val needWater: Int,
                   val needMilk: Int,
